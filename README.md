@@ -33,11 +33,11 @@ Eg:
 
 If you want the program to dynamically set the number of devices based on the size of problem, then set the suggested cities to 0
 
-## Note : 
+### Note : 
 Number of suggested devices is only a directive. The code detects the number of devices on the system and changes this accordingly.
 If the system has only 2 GPUs and input is to use 4, only 2 will be used
 The program is also limited to a max of 8 GPUs to run on irrespective of number of devices available. To change this, go into gpu_tsp.c and increase number of pthreads and pthread structures from 8.(Line 46 and 47)
-
+ 
 ## Input Structure
 cities_coordinates_file
 This is a file containing the city number and its X and Y co ordinate.
@@ -49,7 +49,7 @@ Eg:
 The number of cities listed in file has to exactly match number of cities input in command line args.
 No other characters/new lines, special chars are allowed in file.
 
-## optimal_cities_tour
+### optimal_cities_tour
 This is a file containing the tour that results in the lowest cost for the city set.
 Format
 One number on each line representing the city.
@@ -58,13 +58,13 @@ Eg :
 2
 3
 
-## Note:
+### Note:
 The file should contain exactly the same number of cities as the cities input in command line args.
 The last city of the tour is inferred as the same as the first city in tour.
 Please look at the format used in data folder if you are confused. It contains sample datasets on which we tested and benchmarked the code
 
 
-## Data Folder
+### Data Folder
 This folder contains the datasets on which we ran the code to test and benchmark the results.
 For each dataset eg, if dataset is a666,
 a666 --> File with co ordinates
